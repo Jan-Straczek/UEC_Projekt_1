@@ -1,0 +1,464 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Thu Aug 15 20:54:04 2024
+# Process ID: 6072
+# Current directory: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21200 C:\Users\Jakub\OneDrive\Pulpit\Projekt cyfrwka v2\vivado projekt\projekt.xpr
+# Log file: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/vivado.log
+# Journal file: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt\vivado.jou
+# Running On: LAPTOP-RVVGJBA6, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 16861 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.xpr}
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc702/1.4/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:12 . Memory (MB): peak = 1431.992 ; gain = 365.383
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: top_vga_basys3
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-11241] undeclared symbol 'pclk', assumed default net type 'wire' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/fpga/rtl/top_vga_basys3.sv:49]
+INFO: [Synth 8-11241] undeclared symbol 'clk100MHz_clk_wiz_0_en_clk', assumed default net type 'wire' [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:212]
+INFO: [Synth 8-11241] undeclared symbol 'clk40MHz_clk_wiz_0_en_clk', assumed default net type 'wire' [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:224]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2231.223 ; gain = 409.777
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_vga_basys3' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/fpga/rtl/top_vga_basys3.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:94765]
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:94765]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v:69]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:71768]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:71768]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:80311]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 25 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:80311]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1519]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1519]
+INFO: [Synth 8-6157] synthesizing module 'BUFGCE' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1529]
+INFO: [Synth 8-6155] done synthesizing module 'BUFGCE' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1529]
+INFO: [Synth 8-6157] synthesizing module 'BUFH' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1766]
+INFO: [Synth 8-6155] done synthesizing module 'BUFH' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1766]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v:69]
+INFO: [Synth 8-6157] synthesizing module 'top_vga' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/rtl/top_vga.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'vga_if' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'vga_if' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'vga_if' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'vga_if' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'vga_if' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'vga_if' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'vga_if' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'vga_if' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'vga_if' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'vga_if' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'vga_timing' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/rtl/vga_timing.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'vga_timing' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/rtl/vga_timing.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'draw_bg' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/rtl/draw_bg.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'draw_bg' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/rtl/draw_bg.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'draw_rect_char' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/draw_rect_char.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'vga_if' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'vga_if' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'vga_if' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'vga_if' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'delay' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/delay.sv:10]
+	Parameter WIDTH bound to: 38 - type: integer 
+	Parameter CLK_DEL bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'delay' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/delay.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'draw_rect_char' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/draw_rect_char.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'char_rom' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/char_rom.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'char_rom' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/char_rom.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'font_rom' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/font_rom.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'font_rom' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/font_rom.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'paint_panel' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/paint_panel.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'paint_panel' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/paint_panel.sv:3]
+INFO: [Synth 8-638] synthesizing module 'MouseCtl' [C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/MouseCtl.vhd:207]
+INFO: [Synth 8-3491] module 'Ps2Interface' declared at 'C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/Ps2Interface.vhd:152' bound to instance 'Inst_Ps2Interface' of component 'Ps2Interface' [C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/MouseCtl.vhd:369]
+INFO: [Synth 8-638] synthesizing module 'Ps2Interface' [C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/Ps2Interface.vhd:180]
+INFO: [Synth 8-256] done synthesizing module 'Ps2Interface' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/Ps2Interface.vhd:180]
+INFO: [Synth 8-256] done synthesizing module 'MouseCtl' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/MouseCtl.vhd:207]
+INFO: [Synth 8-6157] synthesizing module 'draw_mouse' [C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/draw_mouse.sv:3]
+INFO: [Synth 8-638] synthesizing module 'MouseDisplay' [C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/MouseDisplay.vhd:119]
+INFO: [Synth 8-256] done synthesizing module 'MouseDisplay' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/MouseDisplay.vhd:119]
+INFO: [Synth 8-6155] done synthesizing module 'draw_mouse' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/draw_mouse.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'top_vga' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/rtl/top_vga.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'top_vga_basys3' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/fpga/rtl/top_vga_basys3.sv:17]
+WARNING: [Synth 8-3848] Net vga_out\.rgb in module/entity vga_timing does not have driver. [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/rtl/vga_timing.sv:15]
+WARNING: [Synth 8-6014] Unused sequential element vsync_reg was removed.  [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/draw_rect_char.sv:33]
+WARNING: [Synth 8-6014] Unused sequential element vblnk_reg was removed.  [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/draw_rect_char.sv:34]
+WARNING: [Synth 8-6014] Unused sequential element hcount_reg was removed.  [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/draw_rect_char.sv:35]
+WARNING: [Synth 8-6014] Unused sequential element hsync_reg was removed.  [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/draw_rect_char.sv:36]
+WARNING: [Synth 8-6014] Unused sequential element hblnk_reg was removed.  [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/draw_rect_char.sv:37]
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/draw_rect_char.sv:38]
+WARNING: [Synth 8-3848] Net vga_out\.hblnk in module/entity draw_mouse does not have driver. [C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/draw_mouse.sv:7]
+WARNING: [Synth 8-3848] Net pclk in module/entity top_vga_basys3 does not have driver. [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/fpga/rtl/top_vga_basys3.sv:49]
+WARNING: [Synth 8-7129] Port vga_out\.hblnk in module draw_mouse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module draw_mouse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port xpos[11] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port xpos[10] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port xpos[9] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port xpos[8] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port xpos[7] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port xpos[6] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port xpos[5] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port xpos[4] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port xpos[3] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port xpos[2] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port xpos[1] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port xpos[0] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ypos[11] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ypos[10] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ypos[9] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ypos[8] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ypos[7] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ypos[6] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ypos[5] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ypos[4] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ypos[3] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ypos[2] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ypos[1] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ypos[0] in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mouse_left in module paint_panel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[11] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[10] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[9] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[8] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[7] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[6] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[5] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[4] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[3] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[2] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[1] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[0] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[11] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[10] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[9] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[8] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[7] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[6] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[5] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[4] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[3] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[2] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[1] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[0] in module vga_timing is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2338.703 ; gain = 517.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2338.703 ; gain = 517.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2338.703 ; gain = 517.258
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2338.703 ; gain = 0.000
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'u_clk_wiz_0/inst/clkout1_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'u_clk_wiz_0/inst/clkout2_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_clk_wiz_0/inst'
+Parsing XDC File [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_vga_basys3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_vga_basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/constrs_1/imports/constraints/top_vga_basys3.xdc]
+Finished Parsing XDC File [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/constrs_1/imports/constraints/top_vga_basys3.xdc]
+Parsing XDC File [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'u_clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'u_clk_wiz_0/inst'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2423.664 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  BUFGCE => BUFGCTRL: 2 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 2450.410 ; gain = 628.965
+67 Infos, 62 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 2450.410 ; gain = 980.340
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Aug 15 20:56:09 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/runme.log
+[Thu Aug 15 20:56:09 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+ECHO is off.
+ECHO is off.
+
+****** Xilinx hw_server v2023.1.1
+  **** Build date : Jun 16 2023 at 19:52:37
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+ECHO is off.
+ECHO is off.
+
+
+******** Xilinx cs_server v2023.1.0
+  ****** Build date   : May 31 2023-20:31:41
+    **** Build number : 2023.1.1685557901
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2500.590 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183739047A
+set_property PROGRAM.FILE {C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/impl_1/top_vga_basys3.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/impl_1/top_vga_basys3.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/utils_1/imports/synth_1/top_vga_basys3.dcp with file C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/top_vga_basys3.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Aug 15 21:09:20 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/runme.log
+[Thu Aug 15 21:09:20 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/impl_1/top_vga_basys3.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183739047A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183739047A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/impl_1/top_vga_basys3.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183739047A
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/utils_1/imports/synth_1/top_vga_basys3.dcp with file C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/top_vga_basys3.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Aug 16 00:31:19 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/runme.log
+[Fri Aug 16 00:31:19 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183739047A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Aug 16 00:33:56 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/runme.log
+[Fri Aug 16 00:33:56 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Aug 16 00:57:50 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/runme.log
+[Fri Aug 16 00:57:50 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Aug 16 00:58:14 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/runme.log
+[Fri Aug 16 00:58:14 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/impl_1/top_vga_basys3.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/utils_1/imports/synth_1/top_vga_basys3.dcp with file C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/top_vga_basys3.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Aug 16 01:02:18 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/runme.log
+[Fri Aug 16 01:02:18 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/impl_1/top_vga_basys3.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/utils_1/imports/synth_1/top_vga_basys3.dcp with file C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/top_vga_basys3.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Aug 16 01:14:46 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/runme.log
+[Fri Aug 16 01:14:46 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Aug 16 01:23:03 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/runme.log
+[Fri Aug 16 01:23:03 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Aug 16 01:26:54 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/runme.log
+[Fri Aug 16 01:26:54 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/impl_1/top_vga_basys3.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/utils_1/imports/synth_1/top_vga_basys3.dcp with file C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/top_vga_basys3.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Aug 16 01:36:07 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/runme.log
+[Fri Aug 16 01:36:07 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/impl_1/top_vga_basys3.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/utils_1/imports/synth_1/top_vga_basys3.dcp with file C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/top_vga_basys3.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Aug 16 01:42:32 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/runme.log
+[Fri Aug 16 01:42:32 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/impl_1/top_vga_basys3.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 16 01:50:52 2024...
