@@ -1,0 +1,613 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Fri Aug 16 01:42:35 2024
+# Process ID: 5532
+# Current directory: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1
+# Command line: vivado.exe -log top_vga_basys3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_vga_basys3.tcl
+# Log file: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/top_vga_basys3.vds
+# Journal file: C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1\vivado.jou
+# Running On: LAPTOP-RVVGJBA6, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 16861 MB
+#-----------------------------------------------------------
+source top_vga_basys3.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 443.500 ; gain = 163.945
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/utils_1/imports/synth_1/top_vga_basys3.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/utils_1/imports/synth_1/top_vga_basys3.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_vga_basys3 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18792
+INFO: [Synth 8-11241] undeclared symbol 'pclk', assumed default net type 'wire' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/fpga/rtl/top_vga_basys3.sv:49]
+INFO: [Synth 8-11241] undeclared symbol 'clk100MHz_clk_wiz_0_en_clk', assumed default net type 'wire' [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:212]
+INFO: [Synth 8-11241] undeclared symbol 'clk40MHz_clk_wiz_0_en_clk', assumed default net type 'wire' [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:224]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1270.270 ; gain = 410.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_vga_basys3' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/fpga/rtl/top_vga_basys3.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:94765]
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:94765]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v:69]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:71768]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:71768]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:80311]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 25 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:80311]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1519]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1519]
+INFO: [Synth 8-6157] synthesizing module 'BUFGCE' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1529]
+INFO: [Synth 8-6155] done synthesizing module 'BUFGCE' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1529]
+INFO: [Synth 8-6157] synthesizing module 'BUFH' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1766]
+INFO: [Synth 8-6155] done synthesizing module 'BUFH' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1766]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v:69]
+INFO: [Synth 8-6157] synthesizing module 'top_vga' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/rtl/top_vga.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'vga_if' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'vga_if' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'vga_if' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'vga_if' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'vga_if' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'vga_if' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'vga_if' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'vga_if' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'vga_if' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'vga_if' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'vga_timing' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/rtl/vga_timing.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'vga_timing' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/rtl/vga_timing.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'draw_bg' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/rtl/draw_bg.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'draw_bg' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/rtl/draw_bg.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'draw_rect_char' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/draw_rect_char.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'vga_if' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'vga_if' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'vga_if' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'vga_if' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/vga_if.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'delay' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/delay.sv:10]
+	Parameter WIDTH bound to: 38 - type: integer 
+	Parameter CLK_DEL bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'delay' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/delay.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'draw_rect_char' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/draw_rect_char.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'char_rom' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/char_rom.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'char_rom' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/char_rom.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'font_rom' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/font_rom.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'font_rom' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/font_rom.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'paint_panel' [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/paint_panel.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'paint_panel' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/paint_panel.sv:3]
+INFO: [Synth 8-638] synthesizing module 'MouseCtl' [C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/MouseCtl.vhd:207]
+INFO: [Synth 8-3491] module 'Ps2Interface' declared at 'C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/Ps2Interface.vhd:152' bound to instance 'Inst_Ps2Interface' of component 'Ps2Interface' [C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/MouseCtl.vhd:369]
+INFO: [Synth 8-638] synthesizing module 'Ps2Interface' [C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/Ps2Interface.vhd:180]
+INFO: [Synth 8-256] done synthesizing module 'Ps2Interface' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/Ps2Interface.vhd:180]
+INFO: [Synth 8-256] done synthesizing module 'MouseCtl' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/MouseCtl.vhd:207]
+INFO: [Synth 8-6157] synthesizing module 'draw_mouse' [C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/draw_mouse.sv:3]
+INFO: [Synth 8-638] synthesizing module 'MouseDisplay' [C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/MouseDisplay.vhd:119]
+INFO: [Synth 8-256] done synthesizing module 'MouseDisplay' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/MouseDisplay.vhd:119]
+INFO: [Synth 8-6155] done synthesizing module 'draw_mouse' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/draw_mouse.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'top_vga' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/rtl/top_vga.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'top_vga_basys3' (0#1) [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/fpga/rtl/top_vga_basys3.sv:17]
+WARNING: [Synth 8-3848] Net vga_out\.rgb in module/entity vga_timing does not have driver. [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/rtl/vga_timing.sv:15]
+WARNING: [Synth 8-6014] Unused sequential element vsync_reg was removed.  [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/draw_rect_char.sv:33]
+WARNING: [Synth 8-6014] Unused sequential element vblnk_reg was removed.  [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/draw_rect_char.sv:34]
+WARNING: [Synth 8-6014] Unused sequential element hcount_reg was removed.  [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/draw_rect_char.sv:35]
+WARNING: [Synth 8-6014] Unused sequential element hsync_reg was removed.  [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/draw_rect_char.sv:36]
+WARNING: [Synth 8-6014] Unused sequential element hblnk_reg was removed.  [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/draw_rect_char.sv:37]
+WARNING: [Synth 8-6014] Unused sequential element rgb_reg was removed.  [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/new/draw_rect_char.sv:38]
+WARNING: [Synth 8-11357] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  pos_mem_reg with 10000 registers
+WARNING: [Synth 8-6014] Unused sequential element posx_mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element posy_mem_reg was removed. 
+WARNING: [Synth 8-3848] Net vga_out\.hblnk in module/entity draw_mouse does not have driver. [C:/Users/Jakub/OneDrive/Pulpit/Nowy folder/Uec2_Lab5/rtl/draw_mouse.sv:7]
+WARNING: [Synth 8-3848] Net pclk in module/entity top_vga_basys3 does not have driver. [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/sources_1/imports/uec2_lab1_student/fpga/rtl/top_vga_basys3.sv:49]
+WARNING: [Synth 8-7129] Port vga_out\.hblnk in module draw_mouse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module draw_mouse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[11] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[10] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[9] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[8] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[7] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[6] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[5] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[4] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[3] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[2] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[1] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_in\.rgb[0] in module draw_bg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[11] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[10] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[9] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[8] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[7] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[6] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[5] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[4] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[3] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[2] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[1] in module vga_timing is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vga_out\.rgb[0] in module vga_timing is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:09 ; elapsed = 00:01:10 . Memory (MB): peak = 2525.129 ; gain = 1665.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 2525.129 ; gain = 1665.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 2525.129 ; gain = 1665.828
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2525.129 ; gain = 0.000
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'u_clk_wiz_0/inst/clkout1_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'u_clk_wiz_0/inst/clkout2_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_clk_wiz_0/inst'
+Parsing XDC File [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_vga_basys3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_vga_basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/constrs_1/imports/constraints/top_vga_basys3.xdc]
+Finished Parsing XDC File [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/constrs_1/imports/constraints/top_vga_basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.srcs/constrs_1/imports/constraints/top_vga_basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_vga_basys3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_vga_basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_vga_basys3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_vga_basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'u_clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'u_clk_wiz_0/inst'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2619.340 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  BUFGCE => BUFGCTRL: 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.214 . Memory (MB): peak = 2619.340 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:35 ; elapsed = 00:01:36 . Memory (MB): peak = 2619.340 ; gain = 1760.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:35 ; elapsed = 00:01:36 . Memory (MB): peak = 2619.340 ; gain = 1760.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for u_clk_wiz_0/inst. (constraint file  {C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/dont_touch.xdc}, line 10).
+Applied set_property KEEP_HIERARCHY = SOFT for u_clk_wiz_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:35 ; elapsed = 00:01:36 . Memory (MB): peak = 2619.340 ; gain = 1760.039
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Ps2Interface'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'MouseCtl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                00000000000000001 |                            00000
+            rx_down_edge |                00000000000000010 |                            00011
+                rx_clk_l |                00000000000000100 |                            00010
+                rx_clk_h |                00000000000001000 |                            00001
+         rx_error_parity |                00000000000010000 |                            00100
+           rx_data_ready |                00000000000100000 |                            00101
+          tx_force_clk_l |                00000000001000000 |                            00110
+      tx_bring_data_down |                00000000010000000 |                            00111
+          tx_release_clk |                00000000100000000 |                            01000
+ tx_first_wait_down_edge |                00000001000000000 |                            01001
+                tx_clk_l |                00000010000000000 |                            01010
+         tx_wait_up_edge |                00000100000000000 |                            01011
+tx_wait_up_edge_before_ack |                00001000000000000 |                            01101
+             tx_wait_ack |                00010000000000000 |                            01110
+         tx_received_ack |                00100000000000000 |                            01111
+         tx_error_no_ack |                01000000000000000 |                            10000
+                tx_clk_h |                10000000000000000 |                            01100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Ps2Interface'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset | 0000000000000000000000000000000000001 |                           000000
+          reset_wait_ack | 0000000000000000000000000000000000010 |                           000001
+reset_wait_bat_completion | 0000000000000000000000000000000000100 |                           000010
+           reset_wait_id | 0000000000000000000000000000000001000 |                           000011
+reset_set_sample_rate_200 | 0000000000000000000000000000000010000 |                           000100
+reset_set_sample_rate_200_wait_ack | 0000000000000000000000000000000100000 |                           000101
+reset_send_sample_rate_200 | 0000000000000000000000000000001000000 |                           000110
+reset_send_sample_rate_200_wait_ack | 0000000000000000000000000000010000000 |                           000111
+reset_set_sample_rate_100 | 0000000000000000000000000000100000000 |                           001000
+reset_set_sample_rate_100_wait_ack | 0000000000000000000000000001000000000 |                           001001
+reset_send_sample_rate_100 | 0000000000000000000000000010000000000 |                           001010
+reset_send_sample_rate_100_wait_ack | 0000000000000000000000000100000000000 |                           001011
+reset_set_sample_rate_80 | 0000000000000000000000001000000000000 |                           001100
+reset_set_sample_rate_80_wait_ack | 0000000000000000000000010000000000000 |                           001101
+reset_send_sample_rate_80 | 0000000000000000000000100000000000000 |                           001110
+reset_send_sample_rate_80_wait_ack | 0000000000000000000001000000000000000 |                           001111
+           reset_read_id | 0000000000000000000010000000000000000 |                           010000
+  reset_read_id_wait_ack | 0000000000000000000100000000000000000 |                           010001
+   reset_read_id_wait_id | 0000000000000000001000000000000000000 |                           010010
+    reset_set_resolution | 0000000000000000010000000000000000000 |                           010011
+reset_set_resolution_wait_ack | 0000000000000000100000000000000000000 |                           010100
+   reset_send_resolution | 0000000000000001000000000000000000000 |                           010101
+reset_send_resolution_wait_ack | 0000000000000010000000000000000000000 |                           010110
+reset_set_sample_rate_40 | 0000000000000100000000000000000000000 |                           010111
+reset_set_sample_rate_40_wait_ack | 0000000000001000000000000000000000000 |                           011000
+reset_send_sample_rate_40 | 0000000000010000000000000000000000000 |                           011001
+reset_send_sample_rate_40_wait_ack | 0000000000100000000000000000000000000 |                           011010
+  reset_enable_reporting | 0000000001000000000000000000000000000 |                           011011
+reset_enable_reporting_wait_ack | 0000000010000000000000000000000000000 |                           011100
+             read_byte_1 | 0000000100000000000000000000000000000 |                           011101
+             read_byte_2 | 0000001000000000000000000000000000000 |                           011110
+             read_byte_3 | 0000010000000000000000000000000000000 |                           011111
+             read_byte_4 | 0000100000000000000000000000000000000 |                           100000
+          mark_new_event | 0001000000000000000000000000000000000 |                           100100
+           check_read_id | 0010000000000000000000000000000000000 |                           100001
+  check_read_id_wait_ack | 0100000000000000000000000000000000000 |                           100010
+   check_read_id_wait_id | 1000000000000000000000000000000000000 |                           100011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'MouseCtl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:01 ; elapsed = 00:03:18 . Memory (MB): peak = 2619.340 ; gain = 1760.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   24 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 1     
+	   3 Input   13 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 6     
+	   2 Input   11 Bit       Adders := 4     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 3     
+	   3 Input    4 Bit       Adders := 2     
++---Registers : 
+	               38 Bit    Registers := 2     
+	               24 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 12    
+	               11 Bit    Registers := 13    
+	                8 Bit    Registers := 7     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 10054 
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	  37 Input   37 Bit        Muxes := 1     
+	   2 Input   37 Bit        Muxes := 69    
+	   2 Input   24 Bit        Muxes := 1     
+	  17 Input   17 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 18    
+	   2 Input   14 Bit        Muxes := 2     
+	   3 Input   12 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 14    
+	   2 Input   11 Bit        Muxes := 7     
+	   3 Input   11 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 2     
+	  37 Input    8 Bit        Muxes := 3     
+	  16 Input    7 Bit        Muxes := 9     
+	  37 Input    4 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 10107 
+	  17 Input    1 Bit        Muxes := 4     
+	  37 Input    1 Bit        Muxes := 20    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[99][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[98][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[97][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[96][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[95][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[94][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[93][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[92][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[91][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[90][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[89][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[88][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[87][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[86][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[85][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[84][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[83][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[82][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[81][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[80][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[79][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[78][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[77][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[76][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[75][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[74][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[73][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[72][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[71][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[70][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[69][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[68][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[67][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[66][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[65][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[64][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[63][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[62][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[61][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[60][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[59][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[58][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[57][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[56][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[55][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[54][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[53][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[52][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[51][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[50][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[49][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[48][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[47][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[46][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[45][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[44][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[43][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[42][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[9][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[8][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[7][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[6][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[5][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[4][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[3][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[2][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[1][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[0][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[41][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[40][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[39][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[38][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[37][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[36][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[35][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[34][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[33][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[32][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[31][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[30][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[29][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[28][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[27][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[26][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[25][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[24][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[23][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[22][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[21][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[20][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[19][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[18][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[17][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[16][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[15][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[14][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[13][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[12][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[11][72] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pos_mem_reg[10][72] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:51 ; elapsed = 00:04:28 . Memory (MB): peak = 2619.340 ; gain = 1760.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++---------------+-----------------------------------------+---------------+----------------+
+|Module Name    | RTL Object                              | Depth x Width | Implemented As | 
++---------------+-----------------------------------------+---------------+----------------+
+|MouseDisplay   | mouserom[0]                             | 256x2         | LUT            | 
+|top_vga_basys3 | u_font_rom/char_line_pixels_reg         | 2048x8        | Block RAM      | 
+|top_vga_basys3 | u_draw_mouse/u_MouseDisplay/mouserom[0] | 256x2         | LUT            | 
++---------------+-----------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:56 ; elapsed = 00:04:33 . Memory (MB): peak = 2619.340 ; gain = 1760.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:57 ; elapsed = 00:04:33 . Memory (MB): peak = 2619.340 ; gain = 1760.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-7052] The timing for the instance u_top_vga/u_font_rom/char_line_pixels_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:57 ; elapsed = 00:04:34 . Memory (MB): peak = 2619.340 ; gain = 1760.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:01 ; elapsed = 00:04:38 . Memory (MB): peak = 2619.340 ; gain = 1760.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:01 ; elapsed = 00:04:38 . Memory (MB): peak = 2619.340 ; gain = 1760.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:01 ; elapsed = 00:04:38 . Memory (MB): peak = 2619.340 ; gain = 1760.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:01 ; elapsed = 00:04:38 . Memory (MB): peak = 2619.340 ; gain = 1760.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:01 ; elapsed = 00:04:38 . Memory (MB): peak = 2619.340 ; gain = 1760.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:01 ; elapsed = 00:04:38 . Memory (MB): peak = 2619.340 ; gain = 1760.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++---------------+----------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name    | RTL Name                                                             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++---------------+----------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top_vga_basys3 | u_top_vga/u_draw_rect_char/u_delay/delay_stage[1].del_mem_reg[1][26] | 4      | 2     | YES          | NO                 | YES               | 2      | 0       | 
++---------------+----------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |BUFGCE     |     2|
+|3     |BUFH       |     2|
+|4     |CARRY4     |    46|
+|5     |LUT1       |    16|
+|6     |LUT2       |   118|
+|7     |LUT3       |    83|
+|8     |LUT4       |    99|
+|9     |LUT5       |    66|
+|10    |LUT6       |   142|
+|11    |MMCME2_ADV |     1|
+|12    |MUXF7      |     5|
+|13    |MUXF8      |     2|
+|14    |ODDR       |     1|
+|15    |RAMB18E1   |     1|
+|16    |SRL16E     |     2|
+|17    |FDCE       |    75|
+|18    |FDPE       |     4|
+|19    |FDRE       |   400|
+|20    |FDSE       |    24|
+|21    |IBUF       |     2|
+|22    |IOBUF      |     2|
+|23    |OBUF       |    15|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:01 ; elapsed = 00:04:38 . Memory (MB): peak = 2619.340 ; gain = 1760.039
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:35 ; elapsed = 00:04:24 . Memory (MB): peak = 2619.340 ; gain = 1665.828
+Synthesis Optimization Complete : Time (s): cpu = 00:04:01 ; elapsed = 00:04:38 . Memory (MB): peak = 2619.340 ; gain = 1760.039
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2619.340 ; gain = 0.000
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'u_clk_wiz_0/inst/clkout1_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'u_clk_wiz_0/inst/clkout2_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 60 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2619.340 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  BUFGCE => BUFGCTRL: 2 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Synth Design complete | Checksum: ba500ddd
+INFO: [Common 17-83] Releasing license: Synthesis
+194 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:05 ; elapsed = 00:04:43 . Memory (MB): peak = 2619.340 ; gain = 2142.738
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Jakub/OneDrive/Pulpit/Projekt cyfrwka v2/vivado projekt/projekt.runs/synth_1/top_vga_basys3.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_vga_basys3_utilization_synth.rpt -pb top_vga_basys3_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 16 01:47:25 2024...
