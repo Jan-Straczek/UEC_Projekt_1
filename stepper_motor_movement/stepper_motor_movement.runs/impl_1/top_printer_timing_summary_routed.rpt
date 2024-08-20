@@ -1,0 +1,642 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1.1 (win64) Build 3900603 Fri Jun 16 19:31:24 MDT 2023
+| Date         : Tue Aug 20 21:39:42 2024
+| Host         : LAPTOP-RVVGJBA6 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file top_printer_timing_summary_routed.rpt -pb top_printer_timing_summary_routed.pb -rpx top_printer_timing_summary_routed.rpx -warn_on_violation
+| Design       : top_printer
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                     Violations  
+---------  ----------------  ------------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell     72          
+LUTAR-1    Warning           LUT drives async reset alert    2           
+TIMING-20  Warning           Non-clocked latch               6           
+LATCH-1    Advisory          Existing latches in the design  1           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (102)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (156)
+5. checking no_input_delay (7)
+6. checking no_output_delay (6)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (102)
+--------------------------
+ There are 4 register/latch pins with no clock driven by root clock pin: btnC (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: btnD (HIGH)
+
+ There are 6 register/latch pins with no clock driven by root clock pin: btnL (HIGH)
+
+ There are 6 register/latch pins with no clock driven by root clock pin: btnR (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: btnU (HIGH)
+
+ There are 72 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: sw1 (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (156)
+--------------------------------------------------
+ There are 156 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (7)
+------------------------------
+ There are 7 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (6)
+-------------------------------
+ There are 6 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                  162          inf        0.000                      0                  162           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay           162 Endpoints
+Min Delay           162 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 u_printer_movement/x_direction_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            JB1
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        10.011ns  (logic 4.114ns (41.095%)  route 5.897ns (58.905%))
+  Logic Levels:           2  (FDRE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y37          FDRE                         0.000     0.000 r  u_printer_movement/x_direction_reg/C
+    SLICE_X0Y37          FDRE (Prop_fdre_C_Q)         0.419     0.419 r  u_printer_movement/x_direction_reg/Q
+                         net (fo=1, routed)           5.897     6.316    JB1_OBUF
+    A14                  OBUF (Prop_obuf_I_O)         3.695    10.011 r  JB1_OBUF_inst/O
+                         net (fo=0)                   0.000    10.011    JB1
+    A14                                                               r  JB1 (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_printer_movement/z_direction_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            JB5
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.815ns  (logic 3.959ns (40.337%)  route 5.856ns (59.663%))
+  Logic Levels:           2  (FDRE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y31          FDRE                         0.000     0.000 r  u_printer_movement/z_direction_reg/C
+    SLICE_X0Y31          FDRE (Prop_fdre_C_Q)         0.456     0.456 r  u_printer_movement/z_direction_reg/Q
+                         net (fo=1, routed)           5.856     6.312    JB5_OBUF
+    A15                  OBUF (Prop_obuf_I_O)         3.503     9.815 r  JB5_OBUF_inst/O
+                         net (fo=0)                   0.000     9.815    JB5
+    A15                                                               r  JB5 (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_printer_movement/y_direction_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            JB3
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.851ns  (logic 3.981ns (50.706%)  route 3.870ns (49.294%))
+  Logic Levels:           2  (FDRE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y36          FDRE                         0.000     0.000 r  u_printer_movement/y_direction_reg/C
+    SLICE_X3Y36          FDRE (Prop_fdre_C_Q)         0.456     0.456 r  u_printer_movement/y_direction_reg/Q
+                         net (fo=1, routed)           3.870     4.326    JB3_OBUF
+    B15                  OBUF (Prop_obuf_I_O)         3.525     7.851 r  JB3_OBUF_inst/O
+                         net (fo=0)                   0.000     7.851    JB3
+    B15                                                               r  JB3 (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_printer_movement/x_pulse_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            JB2
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.754ns  (logic 3.968ns (51.169%)  route 3.786ns (48.831%))
+  Logic Levels:           2  (FDRE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y37          FDRE                         0.000     0.000 r  u_printer_movement/x_pulse_reg/C
+    SLICE_X0Y37          FDRE (Prop_fdre_C_Q)         0.456     0.456 r  u_printer_movement/x_pulse_reg/Q
+                         net (fo=1, routed)           3.786     4.242    JB2_OBUF
+    A16                  OBUF (Prop_obuf_I_O)         3.512     7.754 r  JB2_OBUF_inst/O
+                         net (fo=0)                   0.000     7.754    JB2
+    A16                                                               r  JB2 (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_printer_movement/z_pulse_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            JB6
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.746ns  (logic 3.964ns (51.173%)  route 3.782ns (48.827%))
+  Logic Levels:           2  (FDRE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y36          FDRE                         0.000     0.000 r  u_printer_movement/z_pulse_reg/C
+    SLICE_X1Y36          FDRE (Prop_fdre_C_Q)         0.456     0.456 r  u_printer_movement/z_pulse_reg/Q
+                         net (fo=1, routed)           3.782     4.238    JB6_OBUF
+    A17                  OBUF (Prop_obuf_I_O)         3.508     7.746 r  JB6_OBUF_inst/O
+                         net (fo=0)                   0.000     7.746    JB6
+    A17                                                               r  JB6 (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_printer_movement/y_pulse_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            JB4
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.660ns  (logic 3.959ns (51.683%)  route 3.701ns (48.317%))
+  Logic Levels:           2  (FDRE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y35          FDRE                         0.000     0.000 r  u_printer_movement/y_pulse_reg/C
+    SLICE_X3Y35          FDRE (Prop_fdre_C_Q)         0.456     0.456 r  u_printer_movement/y_pulse_reg/Q
+                         net (fo=1, routed)           3.701     4.157    JB4_OBUF
+    B16                  OBUF (Prop_obuf_I_O)         3.503     7.660 r  JB4_OBUF_inst/O
+                         net (fo=0)                   0.000     7.660    JB4
+    B16                                                               r  JB4 (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 sw0
+                            (input port)
+  Destination:            u_printer_movement/x_counter_reg[0]/R
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.810ns  (logic 1.577ns (27.140%)  route 4.233ns (72.860%))
+  Logic Levels:           2  (IBUF=1 LUT5=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V17                                               0.000     0.000 r  sw0 (IN)
+                         net (fo=0)                   0.000     0.000    sw0
+    V17                  IBUF (Prop_ibuf_I_O)         1.453     1.453 r  sw0_IBUF_inst/O
+                         net (fo=15, routed)          2.845     4.297    u_printer_movement/sw0_IBUF
+    SLICE_X1Y37          LUT5 (Prop_lut5_I1_O)        0.124     4.421 r  u_printer_movement/x_counter[0]_i_1/O
+                         net (fo=20, routed)          1.389     5.810    u_printer_movement/x_counter[0]_i_1_n_0
+    SLICE_X0Y32          FDRE                                         r  u_printer_movement/x_counter_reg[0]/R
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 sw0
+                            (input port)
+  Destination:            u_printer_movement/x_counter_reg[1]/R
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.810ns  (logic 1.577ns (27.140%)  route 4.233ns (72.860%))
+  Logic Levels:           2  (IBUF=1 LUT5=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V17                                               0.000     0.000 r  sw0 (IN)
+                         net (fo=0)                   0.000     0.000    sw0
+    V17                  IBUF (Prop_ibuf_I_O)         1.453     1.453 r  sw0_IBUF_inst/O
+                         net (fo=15, routed)          2.845     4.297    u_printer_movement/sw0_IBUF
+    SLICE_X1Y37          LUT5 (Prop_lut5_I1_O)        0.124     4.421 r  u_printer_movement/x_counter[0]_i_1/O
+                         net (fo=20, routed)          1.389     5.810    u_printer_movement/x_counter[0]_i_1_n_0
+    SLICE_X0Y32          FDRE                                         r  u_printer_movement/x_counter_reg[1]/R
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 sw0
+                            (input port)
+  Destination:            u_printer_movement/x_counter_reg[2]/R
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.810ns  (logic 1.577ns (27.140%)  route 4.233ns (72.860%))
+  Logic Levels:           2  (IBUF=1 LUT5=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V17                                               0.000     0.000 r  sw0 (IN)
+                         net (fo=0)                   0.000     0.000    sw0
+    V17                  IBUF (Prop_ibuf_I_O)         1.453     1.453 r  sw0_IBUF_inst/O
+                         net (fo=15, routed)          2.845     4.297    u_printer_movement/sw0_IBUF
+    SLICE_X1Y37          LUT5 (Prop_lut5_I1_O)        0.124     4.421 r  u_printer_movement/x_counter[0]_i_1/O
+                         net (fo=20, routed)          1.389     5.810    u_printer_movement/x_counter[0]_i_1_n_0
+    SLICE_X0Y32          FDRE                                         r  u_printer_movement/x_counter_reg[2]/R
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 sw0
+                            (input port)
+  Destination:            u_printer_movement/x_counter_reg[3]/R
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.810ns  (logic 1.577ns (27.140%)  route 4.233ns (72.860%))
+  Logic Levels:           2  (IBUF=1 LUT5=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    V17                                               0.000     0.000 r  sw0 (IN)
+                         net (fo=0)                   0.000     0.000    sw0
+    V17                  IBUF (Prop_ibuf_I_O)         1.453     1.453 r  sw0_IBUF_inst/O
+                         net (fo=15, routed)          2.845     4.297    u_printer_movement/sw0_IBUF
+    SLICE_X1Y37          LUT5 (Prop_lut5_I1_O)        0.124     4.421 r  u_printer_movement/x_counter[0]_i_1/O
+                         net (fo=20, routed)          1.389     5.810    u_printer_movement/x_counter[0]_i_1_n_0
+    SLICE_X0Y32          FDRE                                         r  u_printer_movement/x_counter_reg[3]/R
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 u_printer_controller/z_direction_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            u_printer_movement/z_direction_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.307ns  (logic 0.186ns (60.656%)  route 0.121ns (39.344%))
+  Logic Levels:           2  (FDRE=1 LUT2=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y29          FDRE                         0.000     0.000 r  u_printer_controller/z_direction_reg/C
+    SLICE_X0Y29          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  u_printer_controller/z_direction_reg/Q
+                         net (fo=1, routed)           0.121     0.262    u_printer_controller/z_dir
+    SLICE_X0Y31          LUT2 (Prop_lut2_I1_O)        0.045     0.307 r  u_printer_controller/z_direction_i_2/O
+                         net (fo=1, routed)           0.000     0.307    u_printer_movement/z_direction_reg_1
+    SLICE_X0Y31          FDRE                                         r  u_printer_movement/z_direction_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_printer_movement/z_counter_reg[16]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            u_printer_movement/z_pulse_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.354ns  (logic 0.186ns (52.486%)  route 0.168ns (47.514%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y35          FDRE                         0.000     0.000 r  u_printer_movement/z_counter_reg[16]/C
+    SLICE_X1Y35          FDRE (Prop_fdre_C_Q)         0.141     0.141 f  u_printer_movement/z_counter_reg[16]/Q
+                         net (fo=4, routed)           0.168     0.309    u_printer_movement/z_counter_reg[16]
+    SLICE_X1Y36          LUT6 (Prop_lut6_I4_O)        0.045     0.354 r  u_printer_movement/z_pulse_i_1/O
+                         net (fo=1, routed)           0.000     0.354    u_printer_movement/z_pulse0_out
+    SLICE_X1Y36          FDRE                                         r  u_printer_movement/z_pulse_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_printer_movement/z_counter_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            u_printer_movement/z_counter_reg[3]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.357ns  (logic 0.249ns (69.714%)  route 0.108ns (30.286%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y31          FDRE                         0.000     0.000 r  u_printer_movement/z_counter_reg[3]/C
+    SLICE_X1Y31          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  u_printer_movement/z_counter_reg[3]/Q
+                         net (fo=1, routed)           0.108     0.249    u_printer_movement/z_counter_reg_n_0_[3]
+    SLICE_X1Y31          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     0.357 r  u_printer_movement/z_counter_reg[0]_i_2/O[3]
+                         net (fo=1, routed)           0.000     0.357    u_printer_movement/z_counter_reg[0]_i_2_n_4
+    SLICE_X1Y31          FDRE                                         r  u_printer_movement/z_counter_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_printer_movement/z_counter_reg[4]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            u_printer_movement/z_counter_reg[4]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.361ns  (logic 0.256ns (70.880%)  route 0.105ns (29.120%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y32          FDRE                         0.000     0.000 r  u_printer_movement/z_counter_reg[4]/C
+    SLICE_X1Y32          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  u_printer_movement/z_counter_reg[4]/Q
+                         net (fo=1, routed)           0.105     0.246    u_printer_movement/z_counter_reg_n_0_[4]
+    SLICE_X1Y32          CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.115     0.361 r  u_printer_movement/z_counter_reg[4]_i_1/O[0]
+                         net (fo=1, routed)           0.000     0.361    u_printer_movement/z_counter_reg[4]_i_1_n_7
+    SLICE_X1Y32          FDRE                                         r  u_printer_movement/z_counter_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_printer_movement/z_counter_reg[11]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            u_printer_movement/z_counter_reg[11]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.369ns  (logic 0.249ns (67.424%)  route 0.120ns (32.576%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y33          FDRE                         0.000     0.000 r  u_printer_movement/z_counter_reg[11]/C
+    SLICE_X1Y33          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  u_printer_movement/z_counter_reg[11]/Q
+                         net (fo=3, routed)           0.120     0.261    u_printer_movement/z_counter_reg[11]
+    SLICE_X1Y33          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     0.369 r  u_printer_movement/z_counter_reg[8]_i_1/O[3]
+                         net (fo=1, routed)           0.000     0.369    u_printer_movement/z_counter_reg[8]_i_1_n_4
+    SLICE_X1Y33          FDRE                                         r  u_printer_movement/z_counter_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_printer_movement/z_counter_reg[19]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            u_printer_movement/z_counter_reg[19]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.369ns  (logic 0.249ns (67.424%)  route 0.120ns (32.576%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y35          FDRE                         0.000     0.000 r  u_printer_movement/z_counter_reg[19]/C
+    SLICE_X1Y35          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  u_printer_movement/z_counter_reg[19]/Q
+                         net (fo=2, routed)           0.120     0.261    u_printer_movement/z_counter_reg[19]
+    SLICE_X1Y35          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     0.369 r  u_printer_movement/z_counter_reg[16]_i_1/O[3]
+                         net (fo=1, routed)           0.000     0.369    u_printer_movement/z_counter_reg[16]_i_1_n_4
+    SLICE_X1Y35          FDRE                                         r  u_printer_movement/z_counter_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_printer_movement/z_counter_reg[7]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            u_printer_movement/z_counter_reg[7]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.369ns  (logic 0.249ns (67.424%)  route 0.120ns (32.576%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y32          FDRE                         0.000     0.000 r  u_printer_movement/z_counter_reg[7]/C
+    SLICE_X1Y32          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  u_printer_movement/z_counter_reg[7]/Q
+                         net (fo=2, routed)           0.120     0.261    u_printer_movement/z_counter_reg[7]
+    SLICE_X1Y32          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     0.369 r  u_printer_movement/z_counter_reg[4]_i_1/O[3]
+                         net (fo=1, routed)           0.000     0.369    u_printer_movement/z_counter_reg[4]_i_1_n_4
+    SLICE_X1Y32          FDRE                                         r  u_printer_movement/z_counter_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_printer_movement/z_counter_reg[12]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            u_printer_movement/z_counter_reg[12]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.373ns  (logic 0.256ns (68.576%)  route 0.117ns (31.424%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y34          FDRE                         0.000     0.000 r  u_printer_movement/z_counter_reg[12]/C
+    SLICE_X1Y34          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  u_printer_movement/z_counter_reg[12]/Q
+                         net (fo=3, routed)           0.117     0.258    u_printer_movement/z_counter_reg[12]
+    SLICE_X1Y34          CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.115     0.373 r  u_printer_movement/z_counter_reg[12]_i_1/O[0]
+                         net (fo=1, routed)           0.000     0.373    u_printer_movement/z_counter_reg[12]_i_1_n_7
+    SLICE_X1Y34          FDRE                                         r  u_printer_movement/z_counter_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_printer_movement/z_counter_reg[16]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            u_printer_movement/z_counter_reg[16]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.373ns  (logic 0.256ns (68.576%)  route 0.117ns (31.424%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y35          FDRE                         0.000     0.000 r  u_printer_movement/z_counter_reg[16]/C
+    SLICE_X1Y35          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  u_printer_movement/z_counter_reg[16]/Q
+                         net (fo=4, routed)           0.117     0.258    u_printer_movement/z_counter_reg[16]
+    SLICE_X1Y35          CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.115     0.373 r  u_printer_movement/z_counter_reg[16]_i_1/O[0]
+                         net (fo=1, routed)           0.000     0.373    u_printer_movement/z_counter_reg[16]_i_1_n_7
+    SLICE_X1Y35          FDRE                                         r  u_printer_movement/z_counter_reg[16]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_printer_movement/z_counter_reg[8]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            u_printer_movement/z_counter_reg[8]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.373ns  (logic 0.256ns (68.576%)  route 0.117ns (31.424%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y33          FDRE                         0.000     0.000 r  u_printer_movement/z_counter_reg[8]/C
+    SLICE_X1Y33          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  u_printer_movement/z_counter_reg[8]/Q
+                         net (fo=2, routed)           0.117     0.258    u_printer_movement/z_counter_reg[8]
+    SLICE_X1Y33          CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.115     0.373 r  u_printer_movement/z_counter_reg[8]_i_1/O[0]
+                         net (fo=1, routed)           0.000     0.373    u_printer_movement/z_counter_reg[8]_i_1_n_7
+    SLICE_X1Y33          FDRE                                         r  u_printer_movement/z_counter_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
